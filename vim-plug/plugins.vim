@@ -115,6 +115,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'kyazdani42/nvim-web-devicons'
 
 	Plug 'neovim/nvim-lspconfig'
+	Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
@@ -124,6 +126,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	" For vsnip users.
 	Plug 'hrsh7th/cmp-vsnip'
 	Plug 'hrsh7th/vim-vsnip'
+
   
 	Plug 'jameshiew/nvim-magic'
 	Plug 'ms-jpq/coq_nvim'
