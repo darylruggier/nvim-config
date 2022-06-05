@@ -133,7 +133,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 	Plug 'romgrk/barbar.nvim'
   
-  Plug 'neovim/nvim-lspconfig'
 	Plug 'glepnir/lspsaga.nvim'
 
   Plug 'nvim-lualine/lualine.nvim'
