@@ -244,3 +244,8 @@ nnoremap <silent> gs <cmd>lua require('lspsaga.signaturehelp').signature_help()<
 
 " show
 nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
+
+" toggle terminal with <leader> t
+lua << EOF
+vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
+EOF
