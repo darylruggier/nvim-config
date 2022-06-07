@@ -1,25 +1,13 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-	Plug 'projekt0n/github-nvim-theme'
+let mapleader = "\<Space>"
+	" Plug 'projekt0n/github-nvim-theme'
 	Plug 'jiangmiao/auto-pairs'
-	let mapleader = "\<Space>"
 
 	" css3 syntax highlight
 	Plug 'hail2u/vim-css3-syntax'
 
-	" Shakespeare (Yesod templating)
-	Plug 'pbrisbin/vim-syntax-shakespeare'
-
-	" Syntax highlight for .tsx
-	Plug 'ianks/vim-tsx', { 'for': 'typescript.tsx' }
-
-	" Show indentation
-	Plug 'Yggdroot/indentLine'
-
 	" Highlink yank for a second
 	Plug 'machakann/vim-highlightedyank'
-
-	" Surround text with something
-	Plug 'tpope/vim-surround'
 
 	" Intellisense
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
