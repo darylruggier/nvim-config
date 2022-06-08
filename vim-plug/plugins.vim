@@ -28,7 +28,6 @@ let mapleader = "\<Space>"
 
 	Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
 
@@ -55,6 +54,9 @@ let mapleader = "\<Space>"
 
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+
+	" Trouble: inline diagnostics
+	Plug 'folke/trouble.nvim'
 
 	call plug#end()
 
