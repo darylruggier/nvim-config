@@ -59,5 +59,7 @@ let mapleader = "\<Space>"
 	" Trouble: inline diagnostics
 	Plug 'folke/trouble.nvim'
 
+	" GitHub copilot !!!
+	Plug 'github/copilot.vim'
 	call plug#end()
 
