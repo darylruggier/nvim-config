@@ -73,6 +73,9 @@ let mapleader = "\<Space>"
 
 	" Comment.nvim
 	Plug 'numToStr/Comment.nvim'
+
+	" nvim-tree
+	Plug 'kyazdani42/nvim-tree.lua'
 	call plug#end()
 
 
