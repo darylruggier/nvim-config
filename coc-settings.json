@@ -4,7 +4,10 @@
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "prisma",
+    "html",
+    "css"
   ],
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
@@ -16,7 +19,8 @@
     "python",
     "css",
     "markdown",
-    "html"
+    "html",
+    "prisma"
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,

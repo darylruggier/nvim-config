@@ -64,6 +64,9 @@ let mapleader = "\<Space>"
 
 	" Snippets stuff
 	Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+
+	" Prisma support
+	Plug 'pantharshit00/vim-prisma'
 	call plug#end()
 
 
