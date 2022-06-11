@@ -67,6 +67,12 @@ let mapleader = "\<Space>"
 
 	" Prisma support
 	Plug 'pantharshit00/vim-prisma'
+
+	" Git Signs
+	Plug 'lewis6991/gitsigns.nvim'
+
+	" Debug Adapter Protocol 
+	Plug 'mfussenegger/nvim-dap'
 	call plug#end()
 
 
