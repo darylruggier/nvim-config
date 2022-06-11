@@ -69,7 +69,7 @@ let g:polyglot_disabled = ['autoindent']
 
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue PrettierAsync
 
 " Move to previous/next
 nnoremap <silent>    <C-,> :BufferPrevious<CR>

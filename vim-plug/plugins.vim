@@ -61,5 +61,11 @@ let mapleader = "\<Space>"
 
 	" GitHub copilot !!!
 	Plug 'github/copilot.vim'
+
+	" Snippets stuff
+	Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 	call plug#end()
+
+
+
 
