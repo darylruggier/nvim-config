@@ -71,8 +71,8 @@ let mapleader = "\<Space>"
 	" Git Signs
 	Plug 'lewis6991/gitsigns.nvim'
 
-	" Debug Adapter Protocol 
-	Plug 'mfussenegger/nvim-dap'
+	" Comment.nvim
+	Plug 'numToStr/Comment.nvim'
 	call plug#end()
 
 

@@ -311,3 +311,7 @@ require('gitsigns').setup {
   },
 }
 EOF
+
+lua << EOF
+require('Comment').setup()
+EOF
