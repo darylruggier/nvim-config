@@ -76,6 +76,12 @@ let mapleader = "\<Space>"
 
 	" nvim-tree
 	Plug 'kyazdani42/nvim-tree.lua'
+
+	" how-do-i telescope extension
+	Plug 'zane-/howdoi.nvim'
+
+	" smart splits
+	Plug 'mrjones2014/smart-splits.nvim'
 	call plug#end()
 
 
