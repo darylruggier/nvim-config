@@ -483,3 +483,27 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
 } -- END_DEFAULT_OPTS
 EOF
+
+lua << EOF
+require'nvim-web-devicons'.setup {
+ -- your personnal icons can go here (to override)
+ -- you can specify color or cterm_color instead of specifying both of them
+ -- DevIcon will be appended to `name`
+ override = {
+  zsh = {
+    icon = "",
+    color = "#428850",
+    cterm_color = "65",
+    name = "Zsh"
+  }
+ };
+ -- globally enable default icons (default to false)
+ -- will get overriden by `get_icons` option
+ default = true;
+}
+
+require("nvim-web-devicons").get_icon_by_filetype(filetype, opts)
+require("nvim-web-devicons").get_icon_colors_by_filetype(filetype, opts)
+require("nvim-web-devicons").get_icon_color_by_filetype(filetype, opts)
+require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
+EOF
