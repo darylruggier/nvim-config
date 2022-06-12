@@ -82,6 +82,9 @@ let mapleader = "\<Space>"
 
 	" smart splits
 	Plug 'mrjones2014/smart-splits.nvim'
+
+	" toggleterm
+	Plug 'akinsho/toggleterm.nvim'
 	call plug#end()
 
 

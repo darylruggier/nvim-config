@@ -33,6 +33,7 @@ set expandtab
 set cmdheight=1
 set laststatus=2
 set scrolloff=10
+set noshowmode
 
 set nosc noru nosm
 
@@ -135,8 +136,6 @@ nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
 
 lua << EOF
 require("telescope").load_extension "file_browser"
-
-vim.api.nvim_set_keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", {noremap = true, silent = true})
 
 -- Setup nvim-cmp.
 local cmp = require'cmp'
@@ -485,6 +484,20 @@ require("nvim-web-devicons").get_icon_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_colors_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_color_by_filetype(filetype, opts)
 require("nvim-web-devicons").get_icon_cterm_color_by_filetype(filetype, opts)
+
+require("toggleterm").setup {
+    size = 10,
+    open_mapping = [[<c-t>]],
+    shading_factor = 2,
+    direction = "horizontal",
+    float_opts = {
+      border = "curved",
+      highlights = {
+        border = "Normal",
+        background = "Normal",
+      },
+    },
+  }
 EOF
 
 " recommended mappings
