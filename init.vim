@@ -11,7 +11,20 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-css',
   \  'coc-eslint',
-  \  'coc-prettier'
+  \  'coc-prettier',
+  \ 'coc-angular',
+  \ 'coc-highlight',
+  \ 'coc-markdownlint',
+  \ 'coc-rls',
+  \ 'coc-tailwindcss',
+  \ 'coc-sh',
+  \ 'coc-cssmodules',
+  \ 'coc-prisma',
+  \ 'coc-snippets',
+  \ 'coc-vimlsp',
+  \ 'coc-markdown-preview-enhanced',
+  \ 'coc-python',
+  \ 'coc-svelte'
   \ ]
 
 autocmd!
