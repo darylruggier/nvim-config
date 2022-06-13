@@ -31,7 +31,12 @@ autocmd!
 
 set splitright
 set nocompatible
+set relativenumber
 set number
+set nu
+set nohlsearch
+set hidden
+set noerrorbells
 syntax enable
 set fileencoding=utf-8
 set encoding=utf-8
@@ -39,15 +44,17 @@ set title
 set mouse=a
 set autoindent
 set background=dark
+set incsearch
 set nobackup
 set hlsearch
 set showcmd
 set expandtab
 set cmdheight=1
 set laststatus=2
-set scrolloff=10
+set scrolloff=8
 set noshowmode
 set signcolumn=yes
+set colorcolumn=80
 set nosc noru nosm
 
 set lazyredraw
