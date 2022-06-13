@@ -47,7 +47,7 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set noshowmode
-
+set signcolumn=yes
 set nosc noru nosm
 
 set lazyredraw
