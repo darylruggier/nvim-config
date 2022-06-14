@@ -86,6 +86,9 @@ let mapleader = "\<Space>"
 
 	" toggleterm
 	Plug 'akinsho/toggleterm.nvim'
+
+	" primeagen plugin to learn vim 
+	Plug 'ThePrimeagen/vim-be-good'
 	call plug#end()
 
 
