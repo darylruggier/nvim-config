@@ -35,6 +35,7 @@ let g:coc_global_extensions = [
 
 autocmd!
 
+nnoremap gf <C-W>gf
 set splitright
 set nocompatible
 set relativenumber
@@ -111,7 +112,7 @@ nnoremap <silent>    <C-0> :BufferLast<CR>
 " Pin/unpin buffer
 nnoremap <silent>    <C-p> :BufferPin<CR>
 " Close buffer
-nnoremap <silent>    <C-w> :BufferClose<CR>
+" nnoremap <silent>    <C-w> :BufferClose<CR>
 " Wipeout buffer
 "                          :BufferWipeout<CR>
 " Close commands
