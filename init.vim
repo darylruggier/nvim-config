@@ -80,6 +80,7 @@ set termguicolors
 set winblend=0
 set wildoptions=pum
 set pumblend=5
+set clipboard+=unnamedplus " copy and pasting in and out of nvim
 
 let g:lightline = {
       \ 'colorscheme': 'catppuccin',
