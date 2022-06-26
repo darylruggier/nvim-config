@@ -137,7 +137,7 @@ nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 set completeopt=menu,menuone,noselect
 
 
-let g:catppuccin_flavour = "frappe"
+let g:catppuccin_flavour = "mocha"
 colorscheme catppuccin
 
 
