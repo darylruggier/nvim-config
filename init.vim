@@ -17,7 +17,6 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-css',
   \  'coc-eslint',
-  \  'coc-prettier',
   \ 'coc-angular',
   \ 'coc-highlight',
   \ 'coc-markdownlint',
