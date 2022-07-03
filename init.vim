@@ -35,6 +35,8 @@ let g:coc_global_extensions = [
 autocmd!
 
 nnoremap gf <C-W>gf
+set laststatus=3
+set winbar=%f
 set splitright
 set nocompatible
 set relativenumber
@@ -90,48 +92,7 @@ let g:polyglot_disabled = ['autoindent']
 
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue PrettierAsync
-
-" Move to previous/next
-nnoremap <silent>    <C-,> :BufferPrevious<CR>
-nnoremap <silent>    <C-.> :BufferNext<CR>
-" Re-order to previous/next
-nnoremap <silent>    <C-<> :BufferMovePrevious<CR>
-nnoremap <silent>    <C->> :BufferMoveNext<CR>
-" Goto buffer in position...
-nnoremap <silent>    <C-1> :BufferGoto 1<CR>
-nnoremap <silent>    <C-2> :BufferGoto 2<CR>
-nnoremap <silent>    <C-3> :BufferGoto 3<CR>
-nnoremap <silent>    <C-4> :BufferGoto 4<CR>
-nnoremap <silent>    <C-5> :BufferGoto 5<CR>
-nnoremap <silent>    <C-6> :BufferGoto 6<CR>
-nnoremap <silent>    <C-7> :BufferGoto 7<CR>
-nnoremap <silent>    <C-8> :BufferGoto 8<CR>
-nnoremap <silent>    <C-9> :BufferGoto 9<CR>
-nnoremap <silent>    <C-0> :BufferLast<CR>
-" Pin/unpin buffer
-nnoremap <silent>    <C-p> :BufferPin<CR>
-" Close buffer
-" nnoremap <silent>    <C-w> :BufferClose<CR>
-" Wipeout buffer
-"                          :BufferWipeout<CR>
-" Close commands
-"                          :BufferCloseAllButCurrent<CR>
-"                          :BufferCloseAllButPinned<CR>
-"                          :BufferCloseAllButCurrentOrPinned<CR>
-"                          :BufferCloseBuffersLeft<CR>
-"                          :BufferCloseBuffersRight<CR>
-" Magic buffer-picking mode
-nnoremap <silent> <C-p>    :BufferPick<CR>
-" Sort automatically by...
-nnoremap <silent> <Space>bb :BufferOrderByBufferNumber<CR>
-nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
-nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
-nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
-
-" Other:
-" :BarbarEnable - enables barbar (enabled by default)
-" :BarbarDisable - very bad command, should never be used
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 
 set completeopt=menu,menuone,noselect
 

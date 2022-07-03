@@ -12,9 +12,6 @@ let mapleader = "\<Space>"
 	" Intellisense
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-	" NerdTree - File Explorer
-	Plug 'preservim/nerdtree'
-  Plug 'scrooloose/nerdcommenter'
 
 	Plug 'ryanoasis/vim-devicons'
 	
@@ -50,8 +47,6 @@ let mapleader = "\<Space>"
 	Plug 'jameshiew/nvim-magic'
 	Plug 'ms-jpq/coq_nvim'
 
-	Plug 'romgrk/barbar.nvim'
-  
 	Plug 'glepnir/lspsaga.nvim'
 
   Plug 'nvim-lualine/lualine.nvim'
