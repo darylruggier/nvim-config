@@ -97,7 +97,7 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.jso
 set completeopt=menu,menuone,noselect
 
 
-let g:catppuccin_flavour = "mocha"
+let g:catppuccin_flavour = "frappe"
 colorscheme catppuccin
 
 
