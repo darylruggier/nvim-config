@@ -1,7 +1,6 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/coc.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim
-source $HOME/.config/nvim/vim-plug/nvim-tree.vim
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
 source $HOME/.config/nvim/vim-plug/lspsaga.vim

@@ -70,9 +70,6 @@ let mapleader = "\<Space>"
 	" Comment.nvim
 	Plug 'numToStr/Comment.nvim'
 
-	" nvim-tree
-	Plug 'kyazdani42/nvim-tree.lua'
-
 	" how-do-i telescope extension
 	Plug 'zane-/howdoi.nvim'
 
