@@ -61,7 +61,6 @@ set laststatus=2
 set scrolloff=8
 set noshowmode
 set signcolumn=yes
-set colorcolumn=80
 set nosc noru nosm
 
 set lazyredraw
