@@ -1,6 +1,14 @@
 lua << EOF
--- Setup nvim-cmp.
+-- Setup nvim-cmp & lspkind
 local cmp = require'cmp'
+
+local ok, lspkind = pcall(require, "lspkind")
+if not ok then
+  return
+end
+
+lspkind.init()
+
 
 cmp.setup({
   snippet = {
@@ -31,7 +39,25 @@ cmp.setup({
     -- { name = 'snippy' }, -- For snippy users.
   }, {
     { name = 'buffer' },
-  })
+  }),
+  formatting = {
+    format = lspkind.cmp_format {
+      with_text = true,
+      menu = {
+        buffer = "[buf]",
+        nvim_lsp = "[LSP]",
+        nvim_lua = "[api]",
+        path = "[path]",
+        luasnip = "[snip]",
+        gh_issues = "[issues]",
+        tn = "[TabNine]",
+      },
+    },
+  },
+  experimental = {
+    native_menu = false,
+    ghost_text = false,
+  },
 })
 
 -- Set configuration for specific filetype.
@@ -59,7 +85,9 @@ cmp.setup.cmdline(':', {
   }, {
     { name = 'cmdline' }
   })
+
 })
+
 
 --  -- Setup lspconfig.
 --  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
