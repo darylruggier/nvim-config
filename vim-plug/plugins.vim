@@ -28,6 +28,7 @@ let mapleader = "\<Space>"
 	Plug 'kyazdani42/nvim-web-devicons'
 
 	" LSP
+  Plug 'williamboman/nvim-lsp-installer'
 	Plug 'neovim/nvim-lspconfig'
 	
 	" Lspkind

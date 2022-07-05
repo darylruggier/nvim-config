@@ -36,13 +36,10 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-require('lspconfig')['pyright'].setup{
+require('lspconfig').tsserver.setup{
     on_attach = on_attach,
     flags = lsp_flags,
-}
-require('lspconfig')['tsserver'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
+    autostart = true,
 }
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
@@ -51,20 +48,4 @@ require('lspconfig')['rust_analyzer'].setup{
     settings = {
       ["rust-analyzer"] = {}
     }
-}
-require('lspconfig')['html'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['cssls'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['jsonls'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig')['emmet_ls'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
 }

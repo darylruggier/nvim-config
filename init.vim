@@ -1,5 +1,7 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/vim-plug/coc.vim
+source $HOME/.config/nvim/vim-plug/nvim-lsp-installer.lua
+source $HOME/.config/nvim/vim-plug/lsp.lua
+" source $HOME/.config/nvim/vim-plug/coc.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
@@ -10,29 +12,8 @@ source $HOME/.config/nvim/vim-plug/lualine.vim
 source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
 
-
-let g:coc_global_extensions = [
-  \ 'coc-tsserver',
-  \ 'coc-json',
-  \ 'coc-css',
-  \  'coc-eslint',
-  \ 'coc-angular',
-  \ 'coc-highlight',
-  \ 'coc-markdownlint',
-  \ 'coc-rls',
-  \ 'coc-tailwindcss',
-  \ 'coc-sh',
-  \ 'coc-cssmodules',
-  \ 'coc-prisma',
-  \ 'coc-snippets',
-  \ 'coc-vimlsp',
-  \ 'coc-markdown-preview-enhanced',
-  \ 'coc-python',
-  \ 'coc-svelte'
-  \ ]
-
 autocmd!
-
+autocmd BufEnter * LspStart 
 nnoremap gf <C-W>gf
 set laststatus=3
 set winbar=%f
@@ -91,7 +72,6 @@ let g:polyglot_disabled = ['autoindent']
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
-
 set completeopt=menu,menuone,noselect
 
 
