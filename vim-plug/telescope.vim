@@ -8,5 +8,4 @@ nnoremap <leader>hdi <cmd>Telescope howdoi<cr>
 
 lua << EOF
 require("telescope").load_extension "file_browser"
-require("telescope").load_extension "howdoi"
 EOF

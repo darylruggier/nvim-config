@@ -3,14 +3,11 @@ let mapleader = "\<Space>"
 	" Plug 'projekt0n/github-nvim-theme'
 	Plug 'jiangmiao/auto-pairs'
 
-	" css3 syntax highlight
-	Plug 'hail2u/vim-css3-syntax'
+	" " css3 syntax highlight
+	" Plug 'hail2u/vim-css3-syntax'
 
 	" Highlink yank for a second
 	Plug 'machakann/vim-highlightedyank'
-
-	" Intellisense
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 	Plug 'ryanoasis/vim-devicons'
@@ -30,29 +27,32 @@ let mapleader = "\<Space>"
 	Plug 'nvim-telescope/telescope-file-browser.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
 
+	" LSP
 	Plug 'neovim/nvim-lspconfig'
-	Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+	
+	" Lspkind
+	Plug 'onsails/lspkind-nvim'
+	
 
+	" Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+
+	" nvim-cmp
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
 
-	" Lspkind
-	Plug 'onsails/lspkind-nvim'
-
 	" For vsnip users.
 	Plug 'hrsh7th/cmp-vsnip'
 	Plug 'hrsh7th/vim-vsnip'
 
-  
 	Plug 'jameshiew/nvim-magic'
-	Plug 'ms-jpq/coq_nvim'
-
-	Plug 'glepnir/lspsaga.nvim'
+	" Plug 'ms-jpq/coq_nvim'
 
   Plug 'nvim-lualine/lualine.nvim'
+
+	" theme
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 	" Trouble: inline diagnostics
@@ -62,7 +62,7 @@ let mapleader = "\<Space>"
 	Plug 'github/copilot.vim'
 
 	" Snippets stuff
-	Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+	" Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 
 	" Prisma support
 	Plug 'pantharshit00/vim-prisma'
@@ -73,17 +73,16 @@ let mapleader = "\<Space>"
 	" Comment.nvim
 	Plug 'numToStr/Comment.nvim'
 
-	" how-do-i telescope extension
-	Plug 'zane-/howdoi.nvim'
-
+	" " how-do-i telescope extension
+	" Plug 'zane-/howdoi.nvim'
+	
+	
 	" smart splits
 	Plug 'mrjones2014/smart-splits.nvim'
 
 	" toggleterm
 	Plug 'akinsho/toggleterm.nvim'
 
-	" primeagen plugin to learn vim 
-	Plug 'ThePrimeagen/vim-be-good'
 	call plug#end()
 
 
