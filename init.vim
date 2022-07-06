@@ -17,7 +17,7 @@ autocmd BufEnter * LspStart
 nnoremap gf <C-W>gf
 set laststatus=3
 set winbar=%f
-set splitright
+" set splitright
 set nocompatible
 set relativenumber
 set number
