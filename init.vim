@@ -16,7 +16,7 @@ autocmd!
 autocmd BufEnter * LspStart 
 nnoremap gf <C-W>gf
 set laststatus=3
-set winbar=%f
+set winbar=%f\ %m
 set splitright
 set nocompatible
 set relativenumber
@@ -69,7 +69,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 let g:polyglot_disabled = ['autoindent']
 
-let g:user_emmet_expandabbr_key = '<tab>'
+" let g:user_emmet_expandabbr_key = '<tab>'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 set completeopt=menu,menuone,noselect
