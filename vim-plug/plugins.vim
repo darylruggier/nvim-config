@@ -9,6 +9,8 @@ let mapleader = "\<Space>"
 	" Highlink yank for a second
 	Plug 'machakann/vim-highlightedyank'
 
+	" Indent lines
+	Plug 'lukas-reineke/indent-blankline.nvim'
 
 	Plug 'ryanoasis/vim-devicons'
 	

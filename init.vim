@@ -11,6 +11,8 @@ source $HOME/.config/nvim/vim-plug/gitsigns.vim
 source $HOME/.config/nvim/vim-plug/lualine.vim
 source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
+source $HOME/.config/nvim/vim-plug/indent_blankline.lua
+
 
 autocmd!
 autocmd BufEnter * LspStart 
