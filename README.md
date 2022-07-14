@@ -15,7 +15,7 @@
 - nvim-tree
 - nvim-treesitter
 - nvim-web-devicons
--  telescope (+ telescope file browser + plenary)
+- telescope (+ telescope file browser + plenary)
 - toggleterm
 - smart splits
 - prettier
@@ -23,6 +23,7 @@
 - auto-pairs
 - emmet
 - trouble
+- indent_blankline
 
 - theme: catppuccin
 - font: jetbrains mono nerd font
