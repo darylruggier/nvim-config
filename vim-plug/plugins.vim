@@ -3,14 +3,11 @@ let mapleader = "\<Space>"
 	" Plug 'projekt0n/github-nvim-theme'
 	Plug 'jiangmiao/auto-pairs'
 
-	" " css3 syntax highlight
-	" Plug 'hail2u/vim-css3-syntax'
-
 	" Highlink yank for a second
 	Plug 'machakann/vim-highlightedyank'
 
 	" Indent lines
-	Plug 'lukas-reineke/indent-blankline.nvim'
+	" Plug 'lukas-reineke/indent-blankline.nvim'
 
 	Plug 'ryanoasis/vim-devicons'
 	
@@ -64,9 +61,6 @@ let mapleader = "\<Space>"
 	" GitHub copilot !!!
 	Plug 'github/copilot.vim'
 
-	" Snippets stuff
-	" Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-
 	" Prisma support
 	Plug 'pantharshit00/vim-prisma'
 
@@ -79,15 +73,14 @@ let mapleader = "\<Space>"
 	" " how-do-i telescope extension
 	" Plug 'zane-/howdoi.nvim'
 	
-	
 	" smart splits
 	Plug 'mrjones2014/smart-splits.nvim'
 
 	" toggleterm
 	Plug 'akinsho/toggleterm.nvim'
 
+	" todo comments
+	Plug 'folke/todo-comments.nvim'
 	call plug#end()
-
-
 
 
