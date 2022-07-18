@@ -12,6 +12,7 @@ source $HOME/.config/nvim/vim-plug/lualine.vim
 source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
 source $HOME/.config/nvim/vim-plug/indent_blankline.lua
+source $HOME/.config/nvim/vim-plug/smart_dd.lua
 
 
 autocmd!
@@ -76,8 +77,5 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 set completeopt=menu,menuone,noselect
 
-
 let g:catppuccin_flavour = "frappe"
 colorscheme catppuccin
-
-
