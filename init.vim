@@ -11,7 +11,7 @@ source $HOME/.config/nvim/vim-plug/gitsigns.vim
 source $HOME/.config/nvim/vim-plug/lualine.vim
 source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
-source $HOME/.config/nvim/vim-plug/indent_blankline.lua
+" source $HOME/.config/nvim/vim-plug/indent_blankline.lua
 source $HOME/.config/nvim/vim-plug/smart_dd.lua
 source $HOME/.config/nvim/vim-plug/todo-comments.lua
 
@@ -74,7 +74,8 @@ let g:polyglot_disabled = ['autoindent']
 
 " let g:user_emmet_expandabbr_key = '<tab>'
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
+let g:prettier#config#single_quote = 'true'
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 set completeopt=menu,menuone,noselect
 
 let g:catppuccin_flavour = "frappe"
