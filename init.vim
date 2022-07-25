@@ -1,5 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/vim-plug/nvim-lsp-installer.lua
+source $HOME/.config/nvim/vim-plug/mason.lua
 source $HOME/.config/nvim/vim-plug/lsp.lua
 " source $HOME/.config/nvim/vim-plug/coc.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim

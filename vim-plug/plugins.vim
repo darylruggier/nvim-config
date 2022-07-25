@@ -26,8 +26,9 @@ let mapleader = "\<Space>"
 	Plug 'nvim-telescope/telescope-file-browser.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
 
-	" LSP
-  Plug 'williamboman/nvim-lsp-installer'
+	" Native LSP + Mason + Mason LSPConfig
+	Plug 'williamboman/mason.nvim'
+	Plug 'williamboman/mason-lspconfig.nvim'
 	Plug 'neovim/nvim-lspconfig'
 	
 	" Lspkind
@@ -81,6 +82,7 @@ let mapleader = "\<Space>"
 
 	" todo comments
 	Plug 'folke/todo-comments.nvim'
+
+	" Mason
+	Plug 'williamboman/mason.nvim'
 	call plug#end()
-
-
