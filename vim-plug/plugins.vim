@@ -55,6 +55,7 @@ let mapleader = "\<Space>"
 
 	" theme
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+	Plug 'RRethy/nvim-base16', {'as': 'base16'}
 
 	" Trouble: inline diagnostics
 	Plug 'folke/trouble.nvim'
