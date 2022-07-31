@@ -56,6 +56,8 @@ let mapleader = "\<Space>"
 	" theme
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 	Plug 'RRethy/nvim-base16', {'as': 'base16'}
+	Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git', {'as': 'tempus'}
+
 
 	" Trouble: inline diagnostics
 	Plug 'folke/trouble.nvim'
