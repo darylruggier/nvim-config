@@ -26,10 +26,11 @@ let mapleader = "\<Space>"
 	Plug 'nvim-telescope/telescope-file-browser.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
 
-	" Native LSP + Mason + Mason LSPConfig
+	" Native LSP + Mason + Mason LSPConfig + null-ls (linting + formatting)
 	Plug 'williamboman/mason.nvim'
 	Plug 'williamboman/mason-lspconfig.nvim'
 	Plug 'neovim/nvim-lspconfig'
+	Plug 'jose-elias-alvarez/null-ls.nvim'
 	
 	" Lspkind
 	Plug 'onsails/lspkind-nvim'
@@ -66,7 +67,7 @@ let mapleader = "\<Space>"
 	Plug 'github/copilot.vim'
 
 	" Prisma support
-	Plug 'pantharshit00/vim-prisma'
+	" Plug 'pantharshit00/vim-prisma'
 
 	" Git Signs
 	Plug 'lewis6991/gitsigns.nvim'
