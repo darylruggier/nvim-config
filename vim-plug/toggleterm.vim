@@ -3,7 +3,7 @@ require("toggleterm").setup {
     size = 10,
     open_mapping = [[<c-t>]],
     shading_factor = 2,
-    direction = "horizontal",
+    direction = "float",
     float_opts = {
       border = "curved",
       highlights = {
