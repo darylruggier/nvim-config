@@ -67,7 +67,7 @@ set pumblend=5
 set clipboard+=unnamedplus " copy and pasting in and out of nvim
 
 let g:lightline = {
-      \ 'colorscheme': 'catppuccin',
+      \ 'colorscheme': 'gruvbox',
       \ }
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
@@ -80,4 +80,4 @@ let g:prettier#config#single_quote = 'true'
 set completeopt=menu,menuone,noselect
 
 let g:catppuccin_flavour = "frappe"
-colorscheme catppuccin
+colorscheme base16-gruvbox-material-dark-medium

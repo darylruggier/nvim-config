@@ -58,6 +58,7 @@ let mapleader = "\<Space>"
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 	Plug 'RRethy/nvim-base16', {'as': 'base16'}
 	Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git', {'as': 'tempus'}
+	Plug 'morhetz/gruvbox', {'as': 'gruvbox'}
 
 
 	" Trouble: inline diagnostics
