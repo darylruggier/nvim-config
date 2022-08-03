@@ -88,6 +88,6 @@ let mapleader = "\<Space>"
 	" todo comments
 	Plug 'folke/todo-comments.nvim'
 
-	" Mason
-	Plug 'williamboman/mason.nvim'
+	" true-zen
+	Plug 'Pocco81/true-zen.nvim'
 	call plug#end()
