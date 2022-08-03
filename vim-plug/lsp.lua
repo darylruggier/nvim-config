@@ -60,6 +60,11 @@ require('lspconfig')['cssls'].setup{
     flags = lsp_flags,
     autostart = true,
 }
+require('lspconfig')['jsonls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}
 require('lspconfig')['svelte'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
