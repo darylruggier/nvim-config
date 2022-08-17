@@ -1,5 +1,8 @@
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
@@ -36,28 +39,31 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-require('lspconfig')['tsserver'].setup{
+require('lspconfig').tsserver.setup{
+    on_attach = on_attach,
+    filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+    cmd = { "typescript-language-server", "--stdio" },
+    autostart = true,
+    capabilities = capabilities,
+}
+-- require('lspconfig').rust-analyzer.setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+--     autostart = true,
+--     -- Server-specific settings...
+--     settings = {
+--       ["rust-analyzer"] = {}
+--     }
+-- }
+require('lspconfig').html.setup{
     on_attach = on_attach,
     flags = lsp_flags,
     autostart = true,
+    capabilities = capabilities,
 }
-require('lspconfig')['rust_analyzer'].setup{
+require('lspconfig').cssls.setup{
+    capabilities = capabilities,
     on_attach = on_attach,
-    flags = lsp_flags,
-    autostart = true,
-    -- Server-specific settings...
-    settings = {
-      ["rust-analyzer"] = {}
-    }
-}
-require('lspconfig')['html'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-    autostart = true,
-}
-require('lspconfig')['cssls'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
     autostart = true,
 }
 require('lspconfig')['jsonls'].setup{

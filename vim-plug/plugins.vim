@@ -54,11 +54,13 @@ let mapleader = "\<Space>"
 
   Plug 'nvim-lualine/lualine.nvim'
 
-	" theme
+	" themes
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 	Plug 'RRethy/nvim-base16', {'as': 'base16'}
 	Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git', {'as': 'tempus'}
 	Plug 'morhetz/gruvbox', {'as': 'gruvbox'}
+	Plug 'B4mbus/oxocarbon-lua.nvim'
+	Plug 'shaunsingh/nord.nvim', {'as': 'nord'}
 
 
 	" Trouble: inline diagnostics
