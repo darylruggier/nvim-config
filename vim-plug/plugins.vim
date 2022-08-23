@@ -67,7 +67,7 @@ let mapleader = "\<Space>"
 	Plug 'folke/trouble.nvim'
 
 	" GitHub copilot !!!
-	Plug 'github/copilot.vim'
+	" Plug 'github/copilot.vim'
 
 	" Prisma support
 	" Plug 'pantharshit00/vim-prisma'
