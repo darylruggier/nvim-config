@@ -1,6 +1,5 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 let mapleader = "\<Space>"
-	" Plug 'projekt0n/github-nvim-theme'
 	Plug 'jiangmiao/auto-pairs'
 
 	" Highlink yank for a second
@@ -61,6 +60,7 @@ let mapleader = "\<Space>"
 	Plug 'morhetz/gruvbox', {'as': 'gruvbox'}
 	Plug 'B4mbus/oxocarbon-lua.nvim'
 	Plug 'shaunsingh/nord.nvim', {'as': 'nord'}
+	Plug 'projekt0n/github-nvim-theme'
 
 
 	" Trouble: inline diagnostics
