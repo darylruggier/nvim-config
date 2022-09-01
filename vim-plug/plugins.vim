@@ -95,4 +95,7 @@ let mapleader = "\<Space>"
 
 	" vim-matchup
 	Plug 'andymass/vim-matchup'
+
+	" actually.nvim
+	Plug 'mong8se/actually.nvim'
 	call plug#end()
