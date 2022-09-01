@@ -92,4 +92,7 @@ let mapleader = "\<Space>"
 
 	" true-zen
 	Plug 'Pocco81/true-zen.nvim'
+
+	" vim-matchup
+	Plug 'andymass/vim-matchup'
 	call plug#end()
