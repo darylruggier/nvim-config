@@ -15,6 +15,7 @@ source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
 " source $HOME/.config/nvim/vim-plug/indent_blankline.lua
 source $HOME/.config/nvim/vim-plug/smart_dd.lua
 source $HOME/.config/nvim/vim-plug/todo-comments.lua
+source $HOME/.config/nvim/vim-plug/fidget.lua
 
 autocmd!
 autocmd BufEnter * LspStart 

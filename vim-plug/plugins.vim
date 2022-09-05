@@ -33,7 +33,9 @@ let mapleader = "\<Space>"
 	
 	" Lspkind
 	Plug 'onsails/lspkind-nvim'
-	
+
+	" Fidget
+	Plug 'j-hui/fidget.nvim'	
 
 	" Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 
