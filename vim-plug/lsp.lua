@@ -41,7 +41,7 @@ local lsp_flags = {
 }
 require('lspconfig').tsserver.setup{
     on_attach = on_attach,
-    filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+    -- filetypes = { "javascript", "typescript", "typescriptreact", "typescript.tsx" },
     cmd = { "typescript-language-server", "--stdio" },
     autostart = true,
     capabilities = capabilities,
@@ -75,4 +75,24 @@ require('lspconfig')['svelte'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
     autostart = true,
+}
+require('lspconfig')['cmake'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}
+require('lspconfig')['clangd'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}
+require('lspconfig')['pylsp'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}
+require('lspconfig')['solc'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    root_dir = require('lspconfig').util.root_pattern('hardhat.config.*', '.git'),
 }
