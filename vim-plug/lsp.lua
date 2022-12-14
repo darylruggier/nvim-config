@@ -96,3 +96,13 @@ require('lspconfig')['solc'].setup{
     flags = lsp_flags,
     root_dir = require('lspconfig').util.root_pattern('hardhat.config.*', '.git'),
 }
+require('lspconfig')['csharp_ls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}
+require('lspconfig')['sqls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    autostart = true,
+}

@@ -63,6 +63,7 @@ let mapleader = "\<Space>"
 	Plug 'B4mbus/oxocarbon-lua.nvim'
 	Plug 'shaunsingh/nord.nvim', {'as': 'nord'}
 	Plug 'projekt0n/github-nvim-theme'
+	Plug 'rebelot/kanagawa.nvim'
 
 
 	" Trouble: inline diagnostics

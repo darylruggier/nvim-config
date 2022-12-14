@@ -2,7 +2,6 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/mason.lua
 source $HOME/.config/nvim/vim-plug/mason-lspconfig.lua
 source $HOME/.config/nvim/vim-plug/lsp.lua
-" source $HOME/.config/nvim/vim-plug/coc.vim
 source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
@@ -84,4 +83,4 @@ let g:prettier#config#single_quote = 'true'
 set completeopt=menu,menuone,noselect
 
 let g:catppuccin_flavour = "frappe"
-colorscheme github_dark
+colorscheme kanagawa
