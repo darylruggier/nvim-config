@@ -37,21 +37,21 @@ let mapleader = "\<Space>"
 	" Fidget
 	Plug 'j-hui/fidget.nvim'	
 
-	" Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
-
-	" nvim-cmp
+	" nvim-cmp -- autocompletion stuff
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
 
+	Plug 'L3MON4D3/LuaSnip' 
+	Plug 'saadparwaiz1/cmp_luasnip'
+
 	" For vsnip users.
 	Plug 'hrsh7th/cmp-vsnip'
 	Plug 'hrsh7th/vim-vsnip'
 
 	Plug 'jameshiew/nvim-magic'
-	" Plug 'ms-jpq/coq_nvim'
 
   Plug 'nvim-lualine/lualine.nvim'
 
@@ -80,9 +80,6 @@ let mapleader = "\<Space>"
 
 	" Comment.nvim
 	Plug 'numToStr/Comment.nvim'
-
-	" " how-do-i telescope extension
-	" Plug 'zane-/howdoi.nvim'
 	
 	" smart splits
 	Plug 'mrjones2014/smart-splits.nvim'
@@ -92,9 +89,6 @@ let mapleader = "\<Space>"
 
 	" todo comments
 	Plug 'folke/todo-comments.nvim'
-
-	" true-zen
-	Plug 'Pocco81/true-zen.nvim'
 
 	" vim-matchup
 	Plug 'andymass/vim-matchup'

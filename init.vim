@@ -2,15 +2,16 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/mason.lua
 source $HOME/.config/nvim/vim-plug/mason-lspconfig.lua
 source $HOME/.config/nvim/vim-plug/lsp.lua
-source $HOME/.config/nvim/vim-plug/telescope.vim
+" source $HOME/.config/nvim/vim-plug/nvim-cmp.lua
+source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
 source $HOME/.config/nvim/vim-plug/lspsaga.vim
 source $HOME/.config/nvim/vim-plug/comment.vim
 source $HOME/.config/nvim/vim-plug/gitsigns.vim
 source $HOME/.config/nvim/vim-plug/lualine.vim
-source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
-source $HOME/.config/nvim/vim-plug/nvim-treesitter.vim
+" source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
+source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
 " source $HOME/.config/nvim/vim-plug/indent_blankline.lua
 source $HOME/.config/nvim/vim-plug/smart_dd.lua
 source $HOME/.config/nvim/vim-plug/todo-comments.lua
@@ -67,7 +68,7 @@ set pumblend=5
 set clipboard+=unnamedplus " copy and pasting in and out of nvim
 
 let g:lightline = {
-      \ 'colorscheme': 'github_dark',
+      \ 'colorscheme': 'kanagawa',
       \ }
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
@@ -79,7 +80,7 @@ autocmd FileType html,css EmmetInstall
 
 let g:prettier#autoformat = 0
 let g:prettier#config#single_quote = 'true'
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 set completeopt=menu,menuone,noselect
 
 let g:catppuccin_flavour = "frappe"
