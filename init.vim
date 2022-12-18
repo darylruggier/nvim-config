@@ -11,6 +11,7 @@ source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
 source $HOME/.config/nvim/vim-plug/smart_dd.lua
 source $HOME/.config/nvim/vim-plug/todo-comments.lua
 source $HOME/.config/nvim/vim-plug/fidget.lua
+" source $HOME/.config/nvim/vim-plug/copilot.lua
 
 autocmd!
 autocmd BufEnter * LspStart 
@@ -73,7 +74,10 @@ autocmd FileType html,css EmmetInstall
 " let g:prettier#autoformat = 0
 " let g:prettier#config#single_quote = 'true'
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
-autocmd BufWritePre * Format
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.scss,*.json,*.vue,*.svelte,*.lua,*.py, Format
 set completeopt=menu,menuone,noselect
+
+" inoremap <silent><expr> <C-/> copilot#Accept("")
+" let g:copilot_no_tab_map = 1
 
 colorscheme kanagawa

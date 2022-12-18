@@ -21,6 +21,7 @@
 - auto-pairs
 - emmet
 - trouble
+- copilot
 - indent_blankline
 
 - theme: kanagawa
