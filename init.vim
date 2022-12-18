@@ -73,6 +73,7 @@ autocmd FileType html,css EmmetInstall
 " let g:prettier#autoformat = 0
 " let g:prettier#config#single_quote = 'true'
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
+autocmd BufWritePre * Format
 set completeopt=menu,menuone,noselect
 
 colorscheme kanagawa
