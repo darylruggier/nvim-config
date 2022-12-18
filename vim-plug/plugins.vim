@@ -7,18 +7,10 @@ let mapleader = "\<Space>"
 
 	" Indent lines
 	" Plug 'lukas-reineke/indent-blankline.nvim'
-
-	Plug 'ryanoasis/vim-devicons'
 	
   "Emmet
   Plug 'mattn/emmet-vim'
   
-  "vim-polyglot - better syntax support
-  Plug 'sheerun/vim-polyglot'
-
-	" post install (yarn install | npm install) then load plugin only for editing supported files
-
-	Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-lua/plenary.nvim'
@@ -31,9 +23,6 @@ let mapleader = "\<Space>"
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'jose-elias-alvarez/null-ls.nvim'
 	
-	" Lspkind
-	Plug 'onsails/lspkind-nvim'
-
 	" Fidget
 	Plug 'j-hui/fidget.nvim'	
 
@@ -51,29 +40,20 @@ let mapleader = "\<Space>"
 	Plug 'hrsh7th/cmp-vsnip'
 	Plug 'hrsh7th/vim-vsnip'
 
-	Plug 'jameshiew/nvim-magic'
-
   Plug 'nvim-lualine/lualine.nvim'
 
 	" themes
   Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 	Plug 'RRethy/nvim-base16', {'as': 'base16'}
-	Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git', {'as': 'tempus'}
 	Plug 'morhetz/gruvbox', {'as': 'gruvbox'}
-	Plug 'B4mbus/oxocarbon-lua.nvim'
-	Plug 'shaunsingh/nord.nvim', {'as': 'nord'}
 	Plug 'projekt0n/github-nvim-theme'
 	Plug 'rebelot/kanagawa.nvim'
-
 
 	" Trouble: inline diagnostics
 	Plug 'folke/trouble.nvim'
 
 	" GitHub copilot !!!
 	Plug 'github/copilot.vim'
-
-	" Prisma support
-	" Plug 'pantharshit00/vim-prisma'
 
 	" Git Signs
 	Plug 'lewis6991/gitsigns.nvim'
@@ -89,9 +69,6 @@ let mapleader = "\<Space>"
 
 	" todo comments
 	Plug 'folke/todo-comments.nvim'
-
-	" vim-matchup
-	Plug 'andymass/vim-matchup'
 
 	" actually.nvim
 	Plug 'mong8se/actually.nvim'

@@ -4,18 +4,16 @@
 
 ### Plugins Used
 
-- native nvim lsp
-- nvim-lsp-installer
-- lspkind
+- nvim-lspconfig
+- mason && mason-lspconfig
+- null-ls
 - comment
 - gitsigns
-- lspsaga
 - lualine
 - nvim-cmp
-- nvim-tree
 - nvim-treesitter
 - nvim-web-devicons
-- telescope (+ telescope file browser + plenary)
+- telescope (+ telescope file browser + plenary) - requires fzf & rg
 - toggleterm
 - smart splits
 - prettier
@@ -25,5 +23,7 @@
 - trouble
 - indent_blankline
 
-- theme: catppuccin
+- theme: kanagawa
 - font: jetbrains mono nerd font
+
+#### Important: run :checkhealth upon installing to ensure plugins function

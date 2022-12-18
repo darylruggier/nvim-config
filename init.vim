@@ -1,5 +1,6 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/lsp.lua
+source $HOME/.config/nvim/vim-plug/null-ls.lua
 source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
@@ -64,18 +65,14 @@ set clipboard+=unnamedplus " copy and pasting in and out of nvim
 let g:lightline = {
       \ 'colorscheme': 'kanagawa',
       \ }
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-
-let g:polyglot_disabled = ['autoindent']
 
 let g:user_emmet_expandabbr_key = '<tab>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-let g:prettier#autoformat = 0
-let g:prettier#config#single_quote = 'true'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
+" let g:prettier#autoformat = 0
+" let g:prettier#config#single_quote = 'true'
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.html,*.less,*.scss,*.json,*.md,*.vue,*.svelte PrettierAsync
 set completeopt=menu,menuone,noselect
 
-let g:catppuccin_flavour = "frappe"
 colorscheme kanagawa
