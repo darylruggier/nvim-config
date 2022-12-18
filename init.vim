@@ -1,18 +1,12 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/vim-plug/mason.lua
-source $HOME/.config/nvim/vim-plug/mason-lspconfig.lua
 source $HOME/.config/nvim/vim-plug/lsp.lua
-" source $HOME/.config/nvim/vim-plug/nvim-cmp.lua
 source $HOME/.config/nvim/vim-plug/telescope.lua
 source $HOME/.config/nvim/vim-plug/toggleterm.vim
 source $HOME/.config/nvim/vim-plug/nvim-web-devicons.vim
-source $HOME/.config/nvim/vim-plug/lspsaga.vim
-source $HOME/.config/nvim/vim-plug/comment.vim
-source $HOME/.config/nvim/vim-plug/gitsigns.vim
-source $HOME/.config/nvim/vim-plug/lualine.vim
-" source $HOME/.config/nvim/vim-plug/nvim-cmp.vim
+source $HOME/.config/nvim/vim-plug/comment.lua
+source $HOME/.config/nvim/vim-plug/gitsigns.lua
+source $HOME/.config/nvim/vim-plug/lualine.lua
 source $HOME/.config/nvim/vim-plug/nvim-treesitter.lua
-" source $HOME/.config/nvim/vim-plug/indent_blankline.lua
 source $HOME/.config/nvim/vim-plug/smart_dd.lua
 source $HOME/.config/nvim/vim-plug/todo-comments.lua
 source $HOME/.config/nvim/vim-plug/fidget.lua
