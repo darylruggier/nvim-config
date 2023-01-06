@@ -79,6 +79,14 @@ return require("packer").startup(function(use)
 	use("folke/todo-comments.nvim")
 	use("mong8se/actually.nvim")
 	use("tpope/vim-sleuth")
-	use("kylechui/nvim-surround")
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end
+	})
 	use("folke/which-key.nvim")
 end)
