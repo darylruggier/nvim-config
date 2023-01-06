@@ -53,7 +53,7 @@ return require("packer").startup(function(use)
 			-- { "hrsh7th/cmp-vsnip" },
 			{ "rafamadriz/friendly-snippets" },
 
-			-- Formatting 
+			-- Formatting
 			{ "lukas-reineke/lsp-format.nvim" },
 		},
 	})
@@ -79,5 +79,6 @@ return require("packer").startup(function(use)
 	use("folke/todo-comments.nvim")
 	use("mong8se/actually.nvim")
 	use("tpope/vim-sleuth")
-	use("tpope/vim-surround")
+	use("kylechui/nvim-surround")
+	use("folke/which-key.nvim")
 end)

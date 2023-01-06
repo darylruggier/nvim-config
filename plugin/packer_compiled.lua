@@ -191,6 +191,11 @@ _G.packer_plugins = {
     path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-surround"] = {
+    loaded = true,
+    path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -251,10 +256,10 @@ _G.packer_plugins = {
     path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
   },
-  ["vim-surround"] = {
+  ["which-key.nvim"] = {
     loaded = true,
-    path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
+    path = "/Users/daryl/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
