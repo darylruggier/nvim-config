@@ -19,6 +19,12 @@ lsp.set_preferences({
 
 lsp.on_attach(function(client, bufnr)
   require("lsp-format").on_attach(client, bufnr)
+
+  local opts = { buffer = bufnr, remap = false }
+  local bind = vim.keymap.set
+
+  bind('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+  bind('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 end)
 
 lsp.nvim_workspace()

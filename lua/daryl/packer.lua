@@ -50,8 +50,9 @@ return require("packer").startup(function(use)
 
 			-- Snippets
 			{ "L3MON4D3/LuaSnip" },
+			-- the 2 below cause weird ass snippets
 			-- { "hrsh7th/cmp-vsnip" },
-			{ "rafamadriz/friendly-snippets" },
+			-- { "rafamadriz/friendly-snippets" },
 
 			-- Formatting
 			{ "lukas-reineke/lsp-format.nvim" },
@@ -89,4 +90,29 @@ return require("packer").startup(function(use)
 		end
 	})
 	use("folke/which-key.nvim")
+	use({
+		'dense-analysis/neural',
+		config = function()
+			require('neural').setup({
+				open_ai = {
+					api_key = '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'
+				}
+			})
+		end,
+		requires = {
+			'MunifTanjim/nui.nvim',
+			'ElPiloto/significant.nvim'
+		}
+	})
+	use("lukas-reineke/indent-blankline.nvim")
+	-- use("akinsho/bufferline.nvim")
+	use {
+		'LukasPietzschmann/telescope-tabs',
+		requires = { 'nvim-telescope/telescope.nvim' },
+		config = function()
+			require 'telescope-tabs'.setup {
+				-- Your custom config :^)
+			}
+		end
+	}
 end)
