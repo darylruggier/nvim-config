@@ -30,7 +30,7 @@ return {
     ---@type lspconfig.options
     servers = {
       jsonls = {},
-      sumneko_lua = {
+      lua_ls = {
         -- mason = false, -- set to false if you don't want this server to be installed with mason
         settings = {
           Lua = {
@@ -112,7 +112,6 @@ return {
       "cmake",
       "svelte",
       "sqls",
-      "csharp_ls",
       "html",
       "cssls",
       "jsonls",
@@ -120,7 +119,7 @@ return {
       "rust_analyzer",
       "pyright",
       "tsserver",
-      "sumneko_lua",
+      "lua_ls",
       "gopls",
     } ---@type string[]
     for server, server_opts in pairs(servers) do
